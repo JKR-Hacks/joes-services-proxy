@@ -3,13 +3,10 @@
   <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/style.css">
-    <title>ESPN NFL teampage</title>
+    <title>Randy Services Proxy</title>
   </head>
   <body>
-    <div id="Info"></div>
-    <div id="CountDown"></div>
-    <div id="Related"></div>
-    <div id="Reviews"></div>
+    <div id="Schedule"></div>
     <script src="/lib/react.development.js"></script>
     <script src="/lib/react-dom.development.js"></script>
     <script src="http://localhost:3001/bundle.js"></script>
@@ -17,12 +14,8 @@
     <!-- see: https://reactjs.org/docs/react-without-jsx.html -->
     <script>
       ReactDOM.render(
-        React.createElement(Info),
-        document.getElementById('Stats')
-      );
-      ReactDOM.render(
-        React.createElement(CountDown),
-        document.getElementById('CountDown')
+        React.createElement(Schedule),
+        document.getElementById('Schedule')
       );
     </script>
   </body>
