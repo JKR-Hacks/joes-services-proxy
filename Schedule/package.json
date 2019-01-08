@@ -10,7 +10,7 @@
     "seedfeed": "node database/seedscripts/seedfeed.js",
     "test": "jest --coverage"
   },
-  "author": "Beth Johnson",
+  "author": "Joe Boulos",
   "license": "ISC",
   "devDependencies": {
     "axios": "^0.18.0",
