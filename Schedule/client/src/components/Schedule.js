@@ -5,24 +5,24 @@ const style = {
     border: '1px solid #ccc',
     background: '#fefefe',
   },
-}
+};
 
-const Schedule = ({ramsSchedule}) => (
+const Schedule = ({ ramsSchedule }) => (
 
   <div className="container-fluid">
 
     <div className="pos-f-t">
-    <div className="collapse" id="navbarToggleExternalContent">
-      <div className="bg-dark p-4">
-        <h4 className="text-white">Collapsed content</h4>
-        <span className="text-muted">Toggleable via the navbar brand.</span>
+      <div className="collapse" id="navbarToggleExternalContent">
+        <div className="bg-dark p-4">
+          <h4 className="text-white">Collapsed content</h4>
+          <span className="text-muted">Toggleable via the navbar brand.</span>
+        </div>
       </div>
-    </div>
-    <nav className="navbar navbar-dark bg-dark">
-      <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span className="navbar-toggler-icon"></span>
-      </button>
-    </nav>
+      <nav className="navbar navbar-dark bg-dark">
+        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon" />
+        </button>
+      </nav>
     </div>
 
     <h1>Los Angeles Rams Schedule - 2018</h1>
@@ -57,40 +57,65 @@ const Schedule = ({ramsSchedule}) => (
 
     <h5>Regular Season</h5>
 
-    <table className="table table-striped" >
+    <table className="table table-striped">
       <thead>
         <tr>
           {/* //add column headings here */}
-          <th scope ="col">Week</th>
-          <th scope ="col">Date</th>
-          <th scope ="col">Opponent</th>
-          <th scope ="col">Result</th>
-          <th scope ="col">W-L</th>
-          <th scope ="col">HI PASS</th>
-          <th scope ="col">HI RUSH</th>
-          <th scope ="col">HI REC</th>
+          <th scope="col">Week</th>
+          <th scope="col">Date</th>
+          <th scope="col">Opponent</th>
+          <th scope="col">Result</th>
+          <th scope="col">W-L</th>
+          <th scope="col">HI PASS</th>
+          <th scope="col">HI RUSH</th>
+          <th scope="col">HI REC</th>
         </tr>
       </thead>
 
       <tbody>
         {ramsSchedule.map(schedule => (
-        <tr key={schedule.id}>
-          <td>{schedule.week}</td>
-          <td>{schedule.date}</td>
-          <td>{schedule.vs}<img src={`${schedule.opponentlogo}`} className="rounded-circle" width={25} height={25} style={style.image}/> <a href={`${schedule.link}`}>{schedule.city}</a></td>
-          <td>{schedule.wl} <a href={`${schedule.link}`}>{schedule.result}</a></td>
-          <td>{schedule.winloss}</td>
-          <td><a href={`${schedule.link}`}>{schedule.stats.playerpass}</a> {schedule.stats.pass} yards</td>
-          <td><a href={`${schedule.link}`}>{schedule.stats.playerrush}</a> {schedule.stats.rush} yards</td>
-          <td><a href={`${schedule.link}`}>{schedule.stats.playerrec}</a> {schedule.stats.rec} yards</td>
-        </tr>
+          <tr key={schedule.id}>
+            <td>{schedule.week}</td>
+            <td>{schedule.date}</td>
+            <td>
+              {schedule.vs}
+              <img src={`${schedule.opponentlogo}`} className="rounded-circle" width={25} height={25} style={style.image} />
+              {' '}
+              <a href={`${schedule.link}`}>{schedule.city}</a>
+            </td>
+            <td>
+              {schedule.wl}
+              {' '}
+              <a href={`${schedule.link}`}>{schedule.result}</a>
+            </td>
+            <td>{schedule.winloss}</td>
+            <td>
+              <a href={`${schedule.link}`}>{schedule.stats.playerpass}</a>
+              {' '}
+              {schedule.stats.pass}
+              {' '}
+yards
+            </td>
+            <td>
+              <a href={`${schedule.link}`}>{schedule.stats.playerrush}</a>
+              {' '}
+              {schedule.stats.rush}
+              {' '}
+yards
+            </td>
+            <td>
+              <a href={`${schedule.link}`}>{schedule.stats.playerrec}</a>
+              {' '}
+              {schedule.stats.rec}
+              {' '}
+yards
+            </td>
+          </tr>
         ))}
       </tbody>
     </table>
   </div>
-)
-
-
+);
 
 
 export default Schedule;
