@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 
 // Schedule endpoint
-app.get('/espn/schedules', (req, res) => {
+app.get('espn/schedules', (req, res) => {
   ScheduleDB.find({}, (err, data) => {
   })
     .limit(17)
