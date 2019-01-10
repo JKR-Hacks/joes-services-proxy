@@ -3,16 +3,21 @@ import axios from 'axios';
 
 import Schedule from './components/Schedule';
 
+
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
       schedule: [],
+      // ramsFeed: [],
+      // home view should render schedule sidebar and gamefeed on the same page
+      // for now, test components by changing the "view" property until changeView method is implemented
       view: 'schedule',
     };
   }
 
   componentDidMount() {
+    // fetch schedule data
     axios.get('http://localhost:3001/espn/schedules', {
       method: 'GET',
       mode: 'no-cors',
@@ -33,9 +38,29 @@ class App extends Component {
       });
   }
 
-  // eslint-disable-next-line consistent-return
+  // TODO
+  // implement changeView method to switch from main page to schedule page
+
   renderView() {
+    // receives props object, destructure properties
+    // const { schedule, ramsFeed, view } = this.state;
     const { schedule, view } = this.state;
+    // if (view === 'home') {
+    //   return (
+    //     <div id="home">
+    //       <div id="sidebarSchedule">
+    //         <SidebarSchedule
+    //           ramsSchedule={schedule}
+    //         />
+    //       </div>
+    //       <div id="feed">
+    //         <Feed
+    //           ramsFeed={ramsFeed}
+    //         />
+    //       </div>
+    //     </div>
+    //   );
+    // }
     if (view === 'schedule') {
       return (
         <div id="fullschedule">
@@ -45,6 +70,24 @@ class App extends Component {
         </div>
       );
     }
+    // if (view === 'feed') {
+    //   return (
+    //     <div id="feed">
+    //       <Feed
+    //         ramsFeed={ramsFeed}
+    //       />
+    //     </div>
+    //   );
+    // }
+    // if (view === 'sidebarSchedule') {
+    //   return (
+    //     <div id="sidebarSchedule">
+    //       <SidebarSchedule
+    //         ramsSchedule={schedule}
+    //       />
+    //     </div>
+    //   );
+    // }
   }
 
   render() {
