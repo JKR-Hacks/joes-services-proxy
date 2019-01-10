@@ -866,7 +866,7 @@ const ramsFeed =
   "author": "Lindsey Thiry",
   "authorphoto": "https://d152i52xn388ub.cloudfront.net/football/los-angeles-rams-reporter/lindsey-thiry_normal.jpg",
   "title": "Firestorm",
-  "bigphoto": "https://pbs.twimg.com/media/DmCZM0vVAAY7ipD.jpg",
+  "bigphoto": "https://pbs.twimg.com/media/CrXOqXwW8AA9pRf.jpg",
   "smallphoto": "https://dmt55mxnkgbz2.cloudfront.net/900x0_s3-38441-1s3-38441-W-CA-AP-LA-STADIUM-100.jpg",
   "newsfeed": "Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.",
   "timestamp": "10:12 AM"
