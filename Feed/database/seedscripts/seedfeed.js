@@ -8,7 +8,7 @@ const ramsFeed =
   "author": "Lindsey Thiry",
   "authorphoto": "https://d152i52xn388ub.cloudfront.net/football/los-angeles-rams-reporter/lindsey-thiry_normal.jpg",
   "title": "Savannah Smiles",
-  "bigphoto": "https://cbsla.files.wordpress.com/2017/08/gettyimages-825299226.jpg",
+  "bigphoto": "http://cdn1.thecomeback.com/wp-content/uploads/2016/11/rams_throwbacks.jpg",
   "smallphoto": "https://www.thewrap.com/wp-content/uploads/2017/12/Jared-Goff-LA-Rams.jpg",
   "videoclip": "https://dailymail.co.uk/purus/phasellus/in/felis/donec.xml?dignissim=justo&vestibulum=sollicitudin&vestibulum=ut&ante=suscipit&ipsum=a&primis=feugiat&in=et&faucibus=eros&orci=vestibulum&luctus=ac&et=est&ultrices=lacinia&posuere=nisi&cubilia=venenatis&curae=tristique&nulla=fusce&dapibus=congue&dolor=diam&vel=id&est=ornare&donec=imperdiet&odio=sapien&justo=urna&sollicitudin=pretium&ut=nisl&suscipit=ut&a=volutpat&feugiat=sapien&et=arcu&eros=sed&vestibulum=augue&ac=aliquam&est=erat&lacinia=volutpat&nisi=in&venenatis=congue&tristique=etiam&fusce=justo&congue=etiam&diam=pretium&id=iaculis&ornare=justo&imperdiet=in&sapien=hac&urna=habitasse&pretium=platea&nisl=dictumst&ut=etiam&volutpat=faucibus&sapien=cursus&arcu=urna&sed=ut&augue=tellus&aliquam=nulla&erat=ut&volutpat=erat&in=id&congue=mauris&etiam=vulputate&justo=elementum&etiam=nullam&pretium=varius&iaculis=nulla&justo=facilisi&in=cras&hac=non&habitasse=velit&platea=nec&dictumst=nisi&etiam=vulputate&faucibus=nonummy&cursus=maecenas&urna=tincidunt&ut=lacus&tellus=at&nulla=velit&ut=vivamus&erat=vel&id=nulla&mauris=eget&vulputate=eros&elementum=elementum&nullam=pellentesque&varius=quisque&nulla=porta&facilisi=volutpat&cras=erat&non=quisque&velit=erat&nec=eros&nisi=viverra&vulputate=eget&nonummy=congue&maecenas=eget&tincidunt=semper&lacus=rutrum&at=nulla&velit=nunc&vivamus=purus&vel=phasellus",
   "timestamp": "10:35 AM"
@@ -376,8 +376,8 @@ const ramsFeed =
   "author": "Lindsey Thiry",
   "authorphoto": "https://d152i52xn388ub.cloudfront.net/football/los-angeles-rams-reporter/lindsey-thiry_normal.jpg",
   "title": "Calle 54",
-  "bigphoto": "http://www.americanfootballinternational.com/wp-content/uploads/2018/01/NFL-2017-LA-Rams-Rams-running-back-Todd-Gurley-breaks-away-from-two-Colts-defenders-to-pick-up-yards-on-Sept.-10.-Wally-Skalij-Los-Angeles-Times-620x400.png",
-  "smallphoto": "https://cdns.abclocal.go.com/content/wpvi/images/cms/2751521_1280x720.jpg",
+  "bigphoto": "https://pbs.twimg.com/media/Dnz1dy-XcAI5VOa.jpg",
+  "smallphoto": "https://media.nbclosangeles.com/images/620*472/AP_17358781323563.jpg",
   "newsfeed": "Phasellus in felis. Donec semper sapien a libero. Nam dui.\n\nProin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.",
   "videoclip": "http://1688.com/elementum.jsp?sapien=cursus&ut=id&nunc=turpis&vestibulum=integer&ante=aliquet&ipsum=massa&primis=id&in=lobortis&faucibus=convallis&orci=tortor&luctus=risus&et=dapibus&ultrices=augue&posuere=vel&cubilia=accumsan&curae=tellus&mauris=nisi&viverra=eu&diam=orci&vitae=mauris&quam=lacinia&suspendisse=sapien&potenti=quis&nullam=libero&porttitor=nullam&lacus=sit&at=amet&turpis=turpis&donec=elementum&posuere=ligula&metus=vehicula&vitae=consequat&ipsum=morbi&aliquam=a&non=ipsum&mauris=integer&morbi=a&non=nibh&lectus=in&aliquam=quis&sit=justo&amet=maecenas&diam=rhoncus&in=aliquam&magna=lacus&bibendum=morbi&imperdiet=quis&nullam=tortor&orci=id",
   "timestamp": "10:52 AM"

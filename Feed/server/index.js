@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.get('/espn/feeds', (req, res) => {
   FeedDB.find({}, (err, data) => {
   })
-    .limit(27)
+    .limit(10)
     .sort({ timestamp: 1 })
     .then((data) => {
       res.send(data);
