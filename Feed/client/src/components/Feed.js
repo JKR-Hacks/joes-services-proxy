@@ -9,10 +9,11 @@ const style = {
 
 const Feed = ({ ramsFeed }) => (
 
-  <div>
-    <ul>
+  <div className="container">
       {ramsFeed.map(ramFeed => (
-        <li key={ramFeed.id}>
+    <div className="row" key={ramFeed.id}>
+      <div className="col-md-6">
+        <div >
           <div><img src={`${ramFeed.bigphoto}`} width={500} height={350} style={style.image} /></div>
           <div>
             {ramFeed.title}
@@ -32,9 +33,11 @@ Updates:
             <br />
             {ramFeed.timestamp}
           </p>
-        </li>
+        </div>
+    </div>
+    </div>
       ))}
-    </ul>
+
   </div>
 );
 
