@@ -12,7 +12,7 @@ const Feed = ({ ramsFeed }) => (
   <div>
     <ul>
       {ramsFeed.map(ramFeed => (
-        <li key={ramFeed.id} id="sidebar-wrapper">
+        <li key={ramFeed.id}>
           <div><img src={`${ramFeed.bigphoto}`} width={500} height={350} style={style.image} /></div>
           <div>
             {ramFeed.title}
