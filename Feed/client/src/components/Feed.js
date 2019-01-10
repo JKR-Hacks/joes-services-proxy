@@ -16,7 +16,7 @@ const Feed = ({ ramsFeed }) => (
         <div>
           <div><img src={`${ramFeed.bigphoto}`} width={500} height={300} style={style.image} /></div>
           <div> <h2><strong>{ramFeed.title}{' '}</strong></h2></div>
-          <div> author:{' '} {ramFeed.author}{' '} <img src={`${ramFeed.authorphoto}`} /> </div>
+          <div><img className="rounded-circle" width={28} height={28} src={`${ramFeed.authorphoto}`} />{ramFeed.author}</div>
           <p> <strong>Updates:{' '} </strong> {ramFeed.newsfeed} <br /> </p>
           <div><img src={`${ramFeed.smallphoto}`} width={300} height={200} style={style.image} /></div>
           <p> {ramFeed.newsfeed} <br /> </p>
