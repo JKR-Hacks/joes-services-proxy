@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
-import Schedule from './components/Schedule';
+import SidebarSchedule from './components/SidebarSchedule';
 
 
 class App extends Component {
@@ -9,14 +9,13 @@ class App extends Component {
     super(props);
     this.state = {
       schedule: [],
-
-      view: 'schedule',
+      view: 'main',
     };
   }
 
   componentDidMount() {
     // fetch schedule data
-    axios.get('http://localhost:3001/espn/schedules', {
+    axios.get('http://localhost:3004/espn/schedules', {
       method: 'GET',
       mode: 'no-cors',
       headers: {
@@ -38,33 +37,15 @@ class App extends Component {
 
   renderView() {
     const { schedule, view } = this.state;
-    if (view === 'schedule') {
+    if (view === 'main') {
       return (
-        <div id="fullschedule">
-          <Schedule
+        <div id="SidebarSchedule">
+          <SidebarSchedule
             ramsSchedule={schedule}
           />
         </div>
       );
     }
-    // if (view === 'feed') {
-    //   return (
-    //     <div id="feed">
-    //       <Feed
-    //         ramsFeed={ramsFeed}
-    //       />
-    //     </div>
-    //   );
-    // }
-    // if (view === 'sidebarSchedule') {
-    //   return (
-    //     <div id="sidebarSchedule">
-    //       <SidebarSchedule
-    //         ramsSchedule={schedule}
-    //       />
-    //     </div>
-    //   );
-    // }
   }
 
   render() {
