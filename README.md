@@ -16,7 +16,8 @@
 1. [Usage](#Usage)
 1. [Requirements](#requirements)
 1. [Development](#development)
-1. [Setup]
+1. [Setup](#setup)
+1. [Notes](#notes)
 
 ## Usage
 
@@ -62,7 +63,7 @@ To seed the TeamLeaders database: npm run db:setup
 
 ```
 
-## Note
+## Notes
 To view each service independently on their own servers:
 ```sh
 Schedule          http://localhost:3001/
