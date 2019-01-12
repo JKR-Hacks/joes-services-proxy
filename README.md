@@ -74,3 +74,7 @@ Stats             http://localhost:3005/
 TeamLeaders       http://localhost:3006/
 
 ```
+To run updated tests
+```sh
+npm test -- -u
+```

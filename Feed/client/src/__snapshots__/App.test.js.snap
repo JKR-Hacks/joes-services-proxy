@@ -3,23 +3,23 @@
 exports[`App component should render App component 1`] = `
 <div>
   <div
-    id="schedule"
+    id="feed"
   >
-    <schedule
-      ramsSchedule={Array []}
+    <Feed
+      ramsFeed={Array []}
     />
   </div>
 </div>
 `;
 
-exports[`Schedule component should render Schedule component 1`] = `
+exports[`Feed component should render Feed component 1`] = `
 <App>
   <div>
     <div
-      id="schedule"
+      id="feed"
     >
-      <schedule
-        ramsSchedule={Array []}
+      <Feed
+        ramsFeed={Array []}
       />
     </div>
   </div>

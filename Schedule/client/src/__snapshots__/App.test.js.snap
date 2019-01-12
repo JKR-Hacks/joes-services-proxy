@@ -3,7 +3,7 @@
 exports[`App component should render App component 1`] = `
 <div>
   <div
-    id="schedule"
+    id="fullschedule"
   >
     <schedule
       ramsSchedule={Array []}
@@ -16,7 +16,7 @@ exports[`Schedule component should render Schedule component 1`] = `
 <App>
   <div>
     <div
-      id="schedule"
+      id="fullschedule"
     >
       <schedule
         ramsSchedule={Array []}
