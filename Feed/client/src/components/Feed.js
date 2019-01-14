@@ -16,7 +16,7 @@ const Feed = ({ ramsFeed }) => (
       <div className="row" key={ramFeed.id}>
         <div className="col-md-6">
           <div>
-            <div><img src={`${ramFeed.bigphoto}`} width={500} height={300} /></div>
+            <div><img src={`${ramFeed.bigphoto}`} width={800} height={500} /></div>
             <div>
               <h2>
                 <strong>
@@ -36,7 +36,12 @@ Updates:
               {ramFeed.newsfeed}
               <br />
             </p>
-            <div><img src={`${ramFeed.smallphoto}`} width={300} height={200} /></div>
+            <div><img src={`${ramFeed.smallphoto}`} width={600} height={400} /></div>
+            <p>
+              {ramFeed.newsfeed}
+              <br />
+            </p>
+            <iframe width="560" height="315" src={`${ramFeed.videoclip}`} frameBorder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
             <p>
               {ramFeed.newsfeed}
               <br />
