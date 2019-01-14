@@ -32,7 +32,6 @@ const Feed = ({ ramsFeed }) => (
                   <strong>
                     {ramFeed.title}
                   </strong>
-
                 </h2>
               </div>
               <div>
