@@ -11,6 +11,7 @@ class App extends Component {
       schedule: [],
       view: 'main',
     };
+    this.handleClick = this.handleClick.bind(this);
   }
 
   componentDidMount() {
@@ -35,6 +36,13 @@ class App extends Component {
       });
   }
 
+  handleClick() {
+    const { view } = this.state;
+    this.setState({
+      view: 'schedule',
+    });
+  }
+
   renderView() {
     const { schedule, view } = this.state;
     if (view === 'main') {
@@ -42,6 +50,7 @@ class App extends Component {
         <div id="SidebarSchedule">
           <SidebarSchedule
             ramsSchedule={schedule}
+            handleClick={this.handleClick}
           />
         </div>
       );
