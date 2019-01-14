@@ -1,7 +1,10 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/espn/standings', { useNewUrlParser: true });
 
+// DB config
+const onlineDB = require('../config/keys').mongoURI;
+
+mongoose.connect(onlineDB);
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', () => {
