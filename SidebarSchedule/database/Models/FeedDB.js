@@ -1,6 +1,10 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/espn/feeds');
+
+// DB config
+const onlineDB = require('../../config/keys').mongoURI;
+
+mongoose.connect(onlineDB);
 
 const db = mongoose.connection;
 mongoose.Promise = global.Promise;
