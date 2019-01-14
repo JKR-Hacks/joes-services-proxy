@@ -55,6 +55,8 @@ To seed the Feed database: npm run seedfeed
 
 To seed the Standings database: npm run seed
 
+To seed the NavBar database: npm run seed
+
 To seed the Stats database: npm run db:setup
                             npm run db:secondary
 
@@ -72,6 +74,7 @@ Feed              http://localhost:3003/
 ScheduleSidebar   http://localhost:3004/
 Stats             http://localhost:3005/
 TeamLeaders       http://localhost:3006/
+NavBar            http://localhost:3007/
 
 ```
 To run updated tests
