@@ -8,6 +8,10 @@
   </head>
   <body>
     <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg" >
+            <div id="NavBar"></div>
+        </div>
       <div class="row">
         <div class="col-sm-3" >
             <div id="SidebarSchedule"></div>
@@ -31,12 +35,17 @@
     <script src="http://localhost:3004/bundle.js"></script>
     <script src="http://localhost:3005/bundle.js"></script>
     <script src="http://localhost:3006/bundle.js"></script>
+    <script src="http://localhost:3007/bundle.js"></script>
     <!-- see: https://reactjs.org/docs/react-without-jsx.html -->
     <script>
       // ReactDOM.render(
       //   React.createElement(Schedule),
       //   document.getElementById('Schedule')
       // );
+      ReactDOM.render(
+        React.createElement(NavBar),
+        document.getElementById('NavBar')
+      );
       ReactDOM.render(
         React.createElement(Standings),
         document.getElementById('Standings')
