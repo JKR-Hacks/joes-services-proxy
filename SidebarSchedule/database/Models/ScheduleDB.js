@@ -2,9 +2,9 @@ const mongoose = require('mongoose');
 
 
 // DB config
-const onlineScheduleDB = require('../../config/keys').mongoURI;
+const onlineDB = require('../../config/keys').mongoURI;
 
-mongoose.connect(onlineScheduleDB);
+mongoose.connect(onlineDB);
 
 const db = mongoose.connection;
 mongoose.Promise = global.Promise;
