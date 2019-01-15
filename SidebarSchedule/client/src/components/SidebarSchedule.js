@@ -56,7 +56,7 @@ const SidebarSchedule = ({ ramsSchedule, handleClick }) => (
         ))}
       </tbody>
     </table>
-    <a href="http://localhost:{3001}">
+    <a href="http://www.espn.com/nfl/team/schedule/_/name/lar">
       <button type="button" className="btn btn-link btn-lg" />
 Full Schedule
     </a>
