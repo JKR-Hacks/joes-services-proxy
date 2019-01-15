@@ -76,8 +76,9 @@ Stats             http://localhost:3005/
 TeamLeaders       http://localhost:3006/
 NavBar            http://localhost:3007/
 
+Seed TeamLeaders before Stats.
 ```
-To run updated tests
+To run updated jest tests
 ```sh
 npm test -- -u
 ```
