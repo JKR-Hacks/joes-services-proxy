@@ -1,8 +1,8 @@
+/* eslint-disable consistent-return */
 import React, { Component } from 'react';
 import axios from 'axios';
 
 import Schedule from './components/Schedule';
-
 
 class App extends Component {
   constructor(props) {

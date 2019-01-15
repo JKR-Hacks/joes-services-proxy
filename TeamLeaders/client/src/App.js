@@ -18,7 +18,7 @@ class App extends Component {
   componentDidMount() {
     $.ajax({
       method: 'GET',
-      url: 'http://localhost:3006/stats',
+      url: 'http://localhost:3003/stats',
       mode: 'no-cors',
       headers: {
         'Access-Control-Allow-Origin': '*',

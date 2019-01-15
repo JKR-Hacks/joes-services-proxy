@@ -1,7 +1,7 @@
+/* eslint-disable jsx-a11y/iframe-has-title */
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable react/prop-types */
 import React from 'react';
-
 
 const Feed = ({ ramsFeed }) => (
 
@@ -32,6 +32,7 @@ const Feed = ({ ramsFeed }) => (
                   <strong>
                     {ramFeed.title}
                   </strong>
+
                 </h2>
               </div>
               <div>
