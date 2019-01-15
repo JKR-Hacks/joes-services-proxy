@@ -35,7 +35,7 @@ class App extends Component {
     });
     $.ajax({
       method: 'GET',
-      url: 'http://localhost:3006/photos',
+      url: 'http://localhost:3003/photos',
       mode: 'no-cors',
       headers: {
         'Access-Control-Allow-Origin': '*',

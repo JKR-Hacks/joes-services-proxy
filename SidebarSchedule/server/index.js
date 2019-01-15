@@ -25,7 +25,7 @@ app.get('/espn/schedules', (req, res) => {
     });
 });
 
-const port = process.env.PORT || 3004;
+const port = process.env.PORT || 3006;
 
 app.listen(port, () => {
   console.log(`listening on port ${port}`);
