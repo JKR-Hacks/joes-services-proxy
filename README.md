@@ -68,15 +68,13 @@ To seed the TeamLeaders database: npm run db:setup
 ## Notes
 To view each service independently on their own servers:
 ```sh
-Schedule          http://localhost:3001/
-Standings         http://localhost:3002/
-Feed              http://localhost:3003/
-ScheduleSidebar   http://localhost:3004/
-Stats             http://localhost:3005/
-TeamLeaders       http://localhost:3006/
+Standings         http://localhost:3001/
+Schedule          http://localhost:3002/
+TeamLeaders       http://localhost:3003/
+Stats             http://localhost:3004/
+Feed              http://localhost:3005/
+SidebarSchedule   http://localhost:3006/
 NavBar            http://localhost:3007/
-
-Seed TeamLeaders before Stats.
 ```
 To run updated jest tests
 ```sh
