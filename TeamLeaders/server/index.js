@@ -16,14 +16,12 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.get('/stats', (req, res) => {
   db.Stats.find({}).exec((err, data) => {
-    console.log(data, 'STATS DATA IN TEAMLEADERS')
     res.send(data);
   });
 });
 
 app.get('/photos', (req, res) => {
   dbs.Photos.find({}).exec((err, data) => {
-    console.log(data, 'PHOTOS DATA IN TEAMLEADERS')
     res.send(data);
   });
 });
