@@ -1,3 +1,4 @@
+/* eslint-disable func-names */
 const db = require('../Models/ScheduleDB.js');
 const FeedDB = require('../Models/FeedDB.js');
 
@@ -1005,7 +1006,7 @@ const ramsFeed = [{
 
 const insertRamsFeed = function () {
   FeedDB.create(ramsFeed)
-    .then(() => FeedDB.disconnect());
+    .then(() => db.disconnect());
 };
 
 insertRamsFeed();

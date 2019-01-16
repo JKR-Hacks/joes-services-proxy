@@ -1,8 +1,9 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable consistent-return */
 import React, { Component } from 'react';
 import axios from 'axios';
 
 import SidebarSchedule from './components/SidebarSchedule';
-
 
 class App extends Component {
   constructor(props) {
@@ -16,7 +17,7 @@ class App extends Component {
 
   componentDidMount() {
     // fetch schedule data
-    axios.get('http://localhost:3004/espn/schedules', {
+    axios.get('http://localhost:3002/espn/schedules', {
       method: 'GET',
       mode: 'no-cors',
       headers: {

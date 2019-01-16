@@ -16,19 +16,17 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.get('/stats', (req, res) => {
   db.Stats.find({}).exec((err, data) => {
-    console.log(data, 'STATS DATA IN TEAMLEADERS')
     res.send(data);
   });
 });
 
 app.get('/photos', (req, res) => {
   dbs.Photos.find({}).exec((err, data) => {
-    console.log(data, 'PHOTOS DATA IN TEAMLEADERS')
     res.send(data);
   });
 });
 
-const port = process.env.PORT || 3006;
+const port = process.env.PORT || 3003;
 
 app.listen(port, () => {
   console.log(`listening on port ${port}`);

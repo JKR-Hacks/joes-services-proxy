@@ -41,7 +41,6 @@ describe('API calls to database', () => {
     expect(spy).toHaveBeenCalled();
   });
 });
-
 // it("should render Schedule component", () => {
 //   const tree = renderer.create(<Schedule/>).toJSON()
 //   expect(tree).toMatchSnapshot();

@@ -1,10 +1,7 @@
 const mongoose = require('mongoose');
+const onlineDb = require('../../../config/keys');
 
-
-// DB config
-const onlineDB = require('../../config/keys').mongoURI;
-
-mongoose.connect(onlineDB);
+mongoose.connect(onlineDb.mongoURI, { useNewUrlParser: true });
 
 const db = mongoose.connection;
 mongoose.Promise = global.Promise;

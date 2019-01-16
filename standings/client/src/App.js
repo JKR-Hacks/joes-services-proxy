@@ -18,7 +18,7 @@ export default class App extends Component {
   }
 
   componentDidMount() {
-    axios.get('http://localhost:3002/espn/teamstandings', {
+    axios.get('http://localhost:3001/espn/teamstandings', {
       method: 'GET',
       mode: 'no-cors',
       headers: {
@@ -49,13 +49,13 @@ export default class App extends Component {
     const { view, teams } = this.state;
     if (view === 'main') {
       return (
-        <div id="mainstandings">
+        <div>
           <Standings teams={teams} handleClick={this.handleClick} />
         </div>
       );
     } if (view === 'fullstandings') {
       return (
-        <div id="fullstandings">
+        <div>
           <FullStandings teams={teams} />
         </div>
       );

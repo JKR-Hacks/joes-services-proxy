@@ -1,8 +1,8 @@
+/* eslint-disable consistent-return */
 import React, { Component } from 'react';
 import axios from 'axios';
 
 import Feed from './components/Feed';
-
 
 class App extends Component {
   constructor(props) {
@@ -15,7 +15,7 @@ class App extends Component {
 
   componentDidMount() {
     // fetch schedule data
-    axios.get('http://localhost:3003/espn/feeds', {
+    axios.get('http://localhost:3005/espn/feeds', {
       method: 'GET',
       mode: 'no-cors',
       headers: {

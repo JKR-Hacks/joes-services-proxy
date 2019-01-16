@@ -9,7 +9,6 @@ const style = {
   },
 };
 
-
 const SidebarSchedule = ({ ramsSchedule, handleClick }) => (
   <div className="col-sm">
     <p className="h5 text-dark font-weight-bold">REGULAR SEASON</p>
@@ -56,10 +55,7 @@ const SidebarSchedule = ({ ramsSchedule, handleClick }) => (
         ))}
       </tbody>
     </table>
-    <a href="http://www.espn.com/nfl/team/schedule/_/name/lar">
-      <button type="button" className="btn btn-link btn-lg" />
-Full Schedule
-    </a>
+    <button type="button" className="btn btn-link btn-lg" onClick={handleClick}>Full Schedule</button>
   </div>
 );
 

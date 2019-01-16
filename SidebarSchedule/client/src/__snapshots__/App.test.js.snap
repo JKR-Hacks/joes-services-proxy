@@ -3,22 +3,22 @@
 exports[`App component should render App component 1`] = `
 <div>
   <div
-    id="SidebarSchedule"
+    id="schedule"
   >
-    <SidebarSchedule
+    <schedule
       ramsSchedule={Array []}
     />
   </div>
 </div>
 `;
 
-exports[`SidebarSchedule component should render SidebarSchedule component 1`] = `
+exports[`Schedule component should render Schedule component 1`] = `
 <App>
   <div>
     <div
-      id="SidebarSchedule"
+      id="schedule"
     >
-      <SidebarSchedule
+      <schedule
         ramsSchedule={Array []}
       />
     </div>

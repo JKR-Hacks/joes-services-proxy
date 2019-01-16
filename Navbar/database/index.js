@@ -1,10 +1,8 @@
 const mongoose = require('mongoose');
+const onlineDb = require('../../config/keys');
 
+mongoose.connect(onlineDb.mongoURI, { useNewUrlParser: true });
 
-// DB config
-const onlineDB = require('../config/keys').mongoURI;
-
-mongoose.connect(onlineDB);
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', () => {
