@@ -49,6 +49,7 @@
     "babel-preset-react": "^6.24.1",
     "cors": "^2.8.5",
     "express": "^4.15.0",
+    "http-proxy-middleware": "^0.19.1",
     "jest": "^23.6.0",
     "morgan": "^1.9.0",
     "node-fetch": "^2.3.0",

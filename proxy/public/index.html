@@ -15,6 +15,7 @@
         <div class="row">
           <div class="col-sm-3" >
               <div id="SidebarSchedule"></div>
+              <!-- <div id="Schedule"></div> -->
           </div>
           <div class="col-sm-5">
               <div id="Feed"></div>
@@ -29,12 +30,12 @@
     <script src="/lib/react.development.js"></script>
     <script src="/lib/react-dom.development.js"></script>
     <script src="http://localhost:3001/bundle.js"></script>
+    <script src="http://localhost:3002/bundle.js"></script>
     <script src="http://localhost:3003/bundle.js"></script>
     <script src="http://localhost:3004/bundle.js"></script>
     <script src="http://localhost:3005/bundle.js"></script>
     <script src="http://localhost:3006/bundle.js"></script>
     <script src="http://localhost:3007/bundle.js"></script>
-
     <!-- see: https://reactjs.org/docs/react-without-jsx.html -->
     <script>
       ReactDOM.render(
@@ -60,6 +61,10 @@
       ReactDOM.render(
       React.createElement(Stats),
       document.getElementById('Stats')
+      );
+      ReactDOM.render(
+      React.createElement(Schedule),
+      document.getElementById('Schedule')
       );
     </script>
   </body>

@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
-const onlineDb = require('../../../config/keys');
+// const onlineDb = require('../../config/keys');
+const onlineDb = require('../../../feed/config/keys');
 
 mongoose.connect(onlineDb.mongoURI, { useNewUrlParser: true });
 const db = mongoose.connection;
